@@ -1,0 +1,13 @@
+course = Course.object.flter(tescher_id= 
+
+teache name
+techer id foreinkey
+
+course name
+course duration
+teacher id
+price
+
+course = Course.object.
+
+

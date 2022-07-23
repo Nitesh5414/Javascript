@@ -1,0 +1,48 @@
+let line = 7;
+
+let n = 2 * line - 1;
+
+for (let i = 1; i <= n; i += 2) {
+
+  // for (let i = n; i >= 1; i -= 2) {
+
+  // here i is no of stars
+
+  let spaces = n - i;
+
+  let curStr = "";
+
+  for (let space = 0; space < spaces / 2; space++) {
+
+    curStr += " ";
+
+  }
+
+  // add i no of stars
+
+  for (let star = 0; star < i; star++) {
+
+    // i am printing stars here
+
+    // don't use this condition if this is a last line
+
+    if (i + 2 > n) {
+
+      // this is last line
+
+      curStr += "*";
+
+    } else {
+
+      // this is not last line
+
+      if (star == 0 || star + 1 === i) curStr += "*";
+
+      else curStr += " ";
+
+    }
+
+  }
+
+  console.log(curStr);
+}
