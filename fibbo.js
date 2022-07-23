@@ -1,25 +1,21 @@
 /*
-var x = 0;
-var y = 1;
-var z;
+The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones, starting from 0 and 1. That is,
 
-fib[0] = 0;
-fib[1] = 1;
+F(0) = 0, F(1) = 1
+F(n) = F(n - 1) + F(n - 2), for n > 1.
 
-for (i = 2; i <= 10; i++) {
-  alert(x + y);
-  fib[i] = x + y;
-  x = y;
-  z = y;
-}
+Given n, calculate F(n).
 */
 
-function fib(n) {
-  if (n <= 1) {
-    return n;
-  } else {
-    return fib(n - 1) + fib(n - 2);
-  }
+function fibb(num){
+    
+    let sum = 0;
+    if(num==0 || num==1) return num
+
+    for(let i=0; i<num; i++){
+        sum = sum + i
+    }
+    return sum;
 }
 
-fib(10);
+console.log(fibb(4))
