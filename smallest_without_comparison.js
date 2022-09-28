@@ -16,3 +16,22 @@ function smallest(x, y, z){
 let x =4, y = 8, z = 6;
 
 console.log("Smallest of 3 number is " + smallest(x, y, z));
+
+-------------------------------------------------------
+or
+-------------------------------------------------------
+function smallest(x, y, z)
+{
+    let c = 0;
+    while (x && y && z) {
+        x--;
+        y--;
+        z--;
+        c++;
+    }
+    return c;
+}
+// Driver Code
+let x = 20, y = 4, z = 54;
+document.write("Minimum of 3 numbers is "
+    + smallest(x, y, z));
